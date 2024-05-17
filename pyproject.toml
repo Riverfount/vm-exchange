@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "vm-exchange"
+version = "0.1.0"
+description = "This is a small project of an API to inform the value for a currency exchange."
+authors = ["Vicente Marçal <vicente.marcal@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
