@@ -1,0 +1,5 @@
+[development]
+
+[development.security]
+# Set api key in .secrets.toml or in environment variable
+# API_KEY = ""
