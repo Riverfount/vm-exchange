@@ -1,5 +1,19 @@
-[development]
+#####################################################################
+### default: settings section for (ANY environment).              ###
+### Note: this attributes can be overwrited by any other sections ###
+#####################################################################
+[default]
+settings_scope = "default"
 
-[development.security]
+[default.api]
+url_prefix = "/api/v1"
+
+[default.security]
 # Set api key in .secrets.toml or in environment variable
 # API_KEY = ""
+
+########################################################################
+### development: settings section just for DEVELOPMENT environment.  ###
+########################################################################
+[development]
+settings_scope = 'development'
