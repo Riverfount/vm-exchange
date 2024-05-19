@@ -42,7 +42,7 @@ git clone git@github.com:[YourUser]/vm-exchange.git
 cd vm-exchange
 export VM_EXCHANGE_APILAYER_API_KEY='YouSuperSecretAPILayerKEY'  # Create the envvar of APILayer API Key
 export VM_EXCHANGE_ETH_API_KEY='YouSuperSecretETHAPIKEY'  # Create the envvar of ETH API Key
-poetry install
+poetry install --no-root
 poetry run fastapi dev api/main.py
 ```
 
