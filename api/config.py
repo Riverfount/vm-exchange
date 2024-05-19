@@ -17,6 +17,7 @@ settings = Dynaconf(
     load_dotenv=False
 )
 
-# Ensures API_KEY exists in .secrets.toml or as an environment variable
-settings.validators.register(Validator("security.API_KEY", must_exist=True, is_type_of=str))
+# Ensures API KEYs exist in .secrets.toml or as an environment variables
+settings.validators.register(Validator("security.APILAYER_API_KEY", must_exist=True, is_type_of=str))
+settings.validators.register(Validator("security.ETH_API_KEY", must_exist=True, is_type_of=str))
 settings.validators.validate()

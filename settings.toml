@@ -10,7 +10,8 @@ url_prefix = "/api/v1"
 
 [default.security]
 # Set api key in .secrets.toml or in environment variable
-# API_KEY = ""
+# APILAYER_API_KEY = ""
+# ETH_API_KEY = ""
 
 ########################################################################
 ### development: settings section just for DEVELOPMENT environment.  ###
