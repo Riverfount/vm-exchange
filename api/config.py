@@ -2,7 +2,7 @@ from pathlib import Path
 
 from dynaconf import Dynaconf, Validator
 
-ROOT_FOLDER = Path(__file__).parent
+ROOT_FOLDER = Path(__file__).parent.parent
 
 settings = Dynaconf(
     envvar_prefix='vm_exchange',
@@ -10,7 +10,7 @@ settings = Dynaconf(
         ROOT_FOLDER / 'settings.toml',
         ROOT_FOLDER / '.secrets.toml'
     ],
-    default_env='development',  # set the development as a default environment
+    default_env='default',
     environments=['development', 'testing', 'production'],
     env_switcher='vm_exchange_env',
     merge_enabled=True,
