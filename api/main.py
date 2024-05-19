@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 
-from api.api_health.routes import service_router
+from api.services.api_health.routes import service_router
 from api.config import settings
-from api.exchange.routes import exchange_router
+from api.resources.exchange.routes import exchange_router
 from api.middlewares.openapi import init_openapi
 
 description = "This API offers a simple way to converte currencies from one base currency to another."

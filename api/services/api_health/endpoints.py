@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from api.api_health.schemas import ResponseHealthStatus
+from api.services.api_health.schemas import ResponseHealthStatus
 
 router = APIRouter()
 

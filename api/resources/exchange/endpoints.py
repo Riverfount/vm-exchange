@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from api.exchange.business_rules import exchange
-from api.exchange.schemas import ExchangeResponse
+from api.resources.exchange.business_rules import exchange
+from api.resources.exchange.schemas import ExchangeResponse
 
 router = APIRouter()
 
