@@ -28,7 +28,7 @@ async def get_currency_exchange(from_currency: str = 'USD', to_currency: str = '
     """
     base_url = "https://api.apilayer.com/exchangerates_data/latest"
     url = f"{base_url}?symbols={to_currency}&base={from_currency}"
-    headers = {"apikey": settings.security.API_KEY}
+    headers = {"apikey": settings.security.APILAYER_API_KEY}
     async with httpx.AsyncClient() as client:
         try:
             resp = await client.get(url, headers=headers, timeout=15)
