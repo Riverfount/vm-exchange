@@ -25,5 +25,5 @@ RUN poetry install --no-root
 USER app
 
 WORKDIR /home/api
-CMD ["fastapi", "run", "main.py", "--port", "8000"]
+CMD ["fastapi", "run", "main.py", "--host", "0.0.0.0","--port", "8000"]
 
