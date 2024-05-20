@@ -35,7 +35,7 @@ It fetches exchange rates from external APIs: APILayer and Etherscan.
 1. Create a .secrets.toml or environment variables file with the API KEYs needed to run the project (as sad in Prerequisites to Execute)
 1. Install dependencies with Python Poetry
 1. Execute the project 
-1. Open the broser and access 127.0.0.1:8000 
+1. Open the browser and access 127.0.0.1:8000 
 
 ```bash
 git clone git@github.com:[YourUser]/vm-exchange.git
@@ -60,4 +60,4 @@ docker run --rm -p 8000:8000 -e VM_EXCHANGE_APILAYER_API_KEY='YouSuperSecretAPIL
 ```
 
 ## 📄 License
-- This project is licensed by **GPLv3+**.
+- This project is licensed by [GPLv3+](https://github.com/Riverfount/vm-exchange#GPL-3.0-1-ov-file).
