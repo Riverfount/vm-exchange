@@ -61,3 +61,6 @@ docker run --rm -p 8000:8000 -e VM_EXCHANGE_APILAYER_API_KEY='YouSuperSecretAPIL
 
 ## 📄 License
 - This project is licensed by [GPLv3+](https://github.com/Riverfount/vm-exchange#GPL-3.0-1-ov-file).
+
+## Project Decisions
+- [An overview about decisions in this project.](ProjectDecisions.md)
