@@ -8,11 +8,6 @@ def init_openapi(app: FastAPI):
         # generate openapi by native fastapi function
         if not app.openapi_schema:
             app.openapi_schema = app.native_openapi()
-        #
-        # # change logo attribute
-        # app.openapi_schema["info"]["x-logo"] = {
-        #     "url": "https://chatguru.com.br/wp-content/themes/chatguru-2/assets/img/logo.svg"
-        # }
 
         # remove paths prefix
         existing_paths = list(app.openapi_schema['paths'].keys())
