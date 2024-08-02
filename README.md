@@ -32,7 +32,7 @@ It fetches exchange rates from external APIs: APILayer and Etherscan.
 1. Make a fork of this repository (this is made in GitHub)
 1. Clone your fork 
 1. Move to the project directory
-1. Create a .secrets.toml or environment variables file with the API KEYs needed to run the project (as sad in Prerequisites to Execute)
+1. Create a .secrets.toml or environment variables file with the API KEYs needed to run the project (as said in Prerequisites to Execute)
 1. Install dependencies with Python Poetry
 1. Execute the project 
 1. Open the browser and access 127.0.0.1:8000 
